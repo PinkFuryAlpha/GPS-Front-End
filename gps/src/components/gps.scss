@@ -1,0 +1,70 @@
+.flex-box-container{
+    display: flex; 
+    margin-top: 10rem;
+    margin-bottom: 5.5em;
+    align-items: center;
+}
+
+.textTitle{
+    color: white;
+}
+
+.row{
+    border: 3px solid darkblue;
+    width: 60rem;
+    height: 40rem;
+    box-shadow: 5px 5px 5px darkslateblue;
+}
+
+.collumns{
+    border-right: 2px solid gray;
+    background: url('https://images.pexels.com/photos/1079033/pexels-photo-1079033.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+.Override{
+    opacity:1;
+}
+
+.dropbtn{
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+}
+
+.startDate{
+    background-color: #3498db;
+    color: white;
+    box-shadow: 5px 5px 8px #888888;
+    position: relative;
+    top: 6rem;
+}
+
+.endDate{
+    background-color: #3498db;
+    color: white;
+    box-shadow: 5px 5px 8px #888888;
+    position: relative;
+    top: 10rem;
+}
+
+.dropDownUsers{
+    position: relative;
+    right: 10px;
+}
+
+.button{
+    position: relative;
+    top: 18rem;
+}
+
+.map-style{
+    width: 636;
+    height: 624;
+    padding: 0%;
+}
+
+
