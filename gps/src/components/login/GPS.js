@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/gps.scss';
 import '../styles/style.scss';
 import MapsV2 from './MapsV2.js'
-import { Container, Row, Col, Dropdown, DropdownButton, Button, Form, Navbar} from 'react-bootstrap';
+import { Container, Row, Col, Dropdown, DropdownButton, Button, Form} from 'react-bootstrap';
 import { SPRING } from '.';
 
 
