@@ -1,9 +1,8 @@
 import React from 'react'
 import './App.scss';
-import axios from 'axios';
 import {BrowserRouter, Route, Switch,Redirect} from 'react-router-dom';
-import GPS from './components/GPS';
-import Home from './components/Home';
+import Home from './components/login/Home';
+import GPS from './components/login/GPS';
 
 
 
@@ -40,7 +39,7 @@ class App extends React.Component{
             //   {... props} 
             //   loggedInStatus={this.state.loggedInStatus}
             //   user={this.state.user}/>) : (<Redirect to={{pathname: "/"}}/>)
-            <GPS 
+            <GPS
               {... props} 
               loggedInStatus={this.state.loggedInStatus}
               user={this.state.user}/>

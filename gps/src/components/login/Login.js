@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { SPRING } from '.'
+
 
 export class Login extends Component {
 
@@ -19,9 +21,8 @@ constructor(props) {
     submitHandler = e => {
         e.preventDefault()
         console.log(this.state)
-        axios.post('/users/login',
-        this.state,
-        {withCredentials: true})
+        axios.post(`${SPRING}/users/login`,
+        this.state)
         .then(response => {
             console.log(response)
             if (response.request.status === 200){

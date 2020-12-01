@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './gps.scss';
-//import MapContainer from './Map.js';
+import '../styles/gps.scss';
+import '../styles/style.scss';
 import MapsV2 from './MapsV2.js'
-import { Container, Row, Col, Dropdown, DropdownButton, Button, Form} from 'react-bootstrap';
+import { Container, Row, Col, Dropdown, DropdownButton, Button, Form, Navbar} from 'react-bootstrap';
+import { SPRING } from '.';
 
 
 export default class GPS extends Component {
@@ -37,7 +38,7 @@ export default class GPS extends Component {
     }
 
     handleGet(){
-        axios.get("/users",{
+        axios.get(`${SPRING}/users`,{
             headers: {
                 'Authorization': `Basic ${localStorage.getItem('token')}`
             },
@@ -89,7 +90,7 @@ export default class GPS extends Component {
             )
         }
         
-        axios.get("/locations",{
+        axios.get(`${SPRING}/locations`,{
             headers: {
                 'Authorization': `Basic ${localStorage.getItem('token')}`
             },
@@ -122,7 +123,7 @@ export default class GPS extends Component {
         return (
         <Container>    
             <Container>
-                <h1 className="textTitle">Welcome to the platoon, {this.props.user.firstName} {this.props.user.secondName}!</h1>
+                <h1 className="textTitle">Welcome to the website, {this.props.user.firstName} {this.props.user.secondName}!</h1>
                 <h2 className="textTitle">Status: {this.props.loggedInStatus}</h2>
                 <h3 className="textTitle">Selected user: {this.state.username}</h3>
             </Container>

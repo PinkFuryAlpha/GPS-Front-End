@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Login } from './login';
+import { Login } from '.';
 
 export default class Home extends Component {
 
@@ -11,7 +11,7 @@ export default class Home extends Component {
     
     handleSuccessfulAuth(data) {
         this.props.handleLogin(data);
-        this.props.history.push("/gps") 
+        this.props.history.push("/gps"); 
      }
 
     render() {
