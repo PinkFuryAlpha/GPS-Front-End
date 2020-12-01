@@ -64,7 +64,7 @@ export class MapsV2 extends Component {
                   key={index}
                   latitude={location.latitude}
                   longitude={location.longitude}
-                  date={location.date}
+                  date={location.date[0]+"/"+location.date[1]+"/"+location.date[2]+" "+location.date[3]+":"+location.date[4]}
                   onClick={this.onMarkerClick}
                   position={{ lat: location.latitude, lng: location.longitude }}
                 >
